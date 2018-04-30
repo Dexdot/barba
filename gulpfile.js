@@ -40,19 +40,7 @@ gulp.task('js', function() {
             {
               test: /\.(js)$/,
               exclude: /(node_modules)/,
-              loader: 'babel-loader',
-              query: {
-                presets: [
-                  [
-                    'env',
-                    {
-                      targets: {
-                        browsers: ['last 2 versions', 'ie >= 11']
-                      }
-                    }
-                  ]
-                ]
-              }
+              loader: 'babel-loader'
             }
           ]
         }
@@ -80,19 +68,7 @@ gulp.task('js-min', function() {
             {
               test: /\.(js)$/,
               exclude: /(node_modules)/,
-              loader: 'babel-loader',
-              query: {
-                presets: [
-                  [
-                    'env',
-                    {
-                      targets: {
-                        browsers: ['last 2 versions', 'ie >= 11']
-                      }
-                    }
-                  ]
-                ]
-              }
+              loader: 'babel-loader'
             }
           ]
         }
